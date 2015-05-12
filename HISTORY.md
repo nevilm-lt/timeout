@@ -1,35 +1,3 @@
-1.9.0 / 2017-05-16
-==================
-
-  * deps: http-errors@~1.6.1
-    - Make `message` property enumerable for `HttpError`s
-    - deps: setprototypeof@1.0.3
-  * deps: ms@2.0.0
-
-1.8.0 / 2016-11-21
-==================
-
-  * Remove un-used debug dependency
-  * deps: http-errors@~1.5.1
-    - Add `HttpError` export, for `err instanceof createError.HttpError`
-    - Use `setprototypeof` module to replace `__proto__` setting
-    - deps: inherits@2.0.3
-    - deps: statuses@'>= 1.3.1 < 2'
-    - perf: enable strict mode
-  * deps: ms@0.7.2
-  * deps: on-headers@~1.0.1
-    - perf: enable strict mode
-
-1.7.0 / 2015-08-23
-==================
-
-  * Use `on-finished` instead of override socket destroy
-    - Addresses memory leaking on keep alive connections
-    - Ensures timers always get cleaned up
-  * perf: enable strict mode
-  * perf: remove argument reassignment
-  * perf: use standard option existence check
-
 1.6.2 / 2015-05-11
 ==================
 

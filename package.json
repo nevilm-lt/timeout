@@ -1,7 +1,7 @@
 {
   "name": "connect-timeout",
-  "description": "Request timeout middleware for Connect/Express",
-  "version": "1.9.0",
+  "description": "timeout middleware",
+  "version": "1.6.2",
   "contributors": [
     "Douglas Christopher Wilson <doug@somethingdoug.com>",
     "Jonathan Ong <me@jongleberry.com> (http://jongleberry.com)"
