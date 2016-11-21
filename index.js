@@ -12,10 +12,10 @@
  * @private
  */
 
-var createError = require('http-errors');
-var ms = require('ms');
-var onFinished = require('on-finished');
-var onHeaders = require('on-headers');
+var createError = require('http-errors')
+var ms = require('ms')
+var onFinished = require('on-finished')
+var onHeaders = require('on-headers')
 
 /**
  * Module exports.
@@ -34,7 +34,7 @@ module.exports = timeout
  * @public
  */
 
-function timeout (time, options) {
+module.exports = function timeout (time, options) {
   var opts = options || {}
 
   var delay = typeof time === 'string'
@@ -70,14 +70,6 @@ function timeout (time, options) {
     next()
   }
 }
-
-/**
- * Create timeout listener function.
- *
- * @param {number} delay
- * @param {function} cb
- * @private
- */
 
 function onTimeout (delay, cb) {
   return function () {
