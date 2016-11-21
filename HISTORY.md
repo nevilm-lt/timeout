@@ -15,6 +15,7 @@
     - deps: inherits@2.0.3
     - deps: statuses@'>= 1.3.1 < 2'
     - perf: enable strict mode
+  * deps: ms@0.7.2
   * deps: on-headers@~1.0.1
     - perf: enable strict mode
 
