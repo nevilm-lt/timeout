@@ -126,21 +126,21 @@ app.listen(3000)
 ### connect
 
 ```javascript
-var bodyParser = require('body-parser')
-var connect = require('connect')
-var timeout = require('connect-timeout')
+var bodyParser = require('body-parser');
+var connect = require('connect');
+var timeout = require('connect-timeout');
 
-var app = connect()
-app.use('/save', timeout('5s'), bodyParser.json(), haltOnTimedout, function (req, res, next) {
-  savePost(req.body, function (err, id) {
-    if (err) return next(err)
-    if (req.timedout) return
-    res.send('saved as id ' + id)
-  })
-})
+var app = connect();
+app.use('/save', timeout('5s'), bodyParser.json(), haltOnTimedout, function(req, res, next){
+  savePost(req.body, function(err, id){
+    if (err) return next(err);
+    if (req.timedout) return;
+    res.send('saved as id ' + id);
+  });
+});
 
-function haltOnTimedout (req, res, next) {
-  if (!req.timedout) next()
+function haltOnTimedout(req, res, next){
+  if (!req.timedout) next();
 }
 
 function savePost(post, cb){
