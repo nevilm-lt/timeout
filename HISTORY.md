@@ -6,11 +6,10 @@
     - deps: setprototypeof@1.0.3
   * deps: ms@2.0.0
 
-1.8.0 / 2016-11-21
-==================
-
-  * Remove un-used debug dependency
-  * deps: http-errors@~1.5.1
+  * deps: debug@2.3.3
+    - Fix error when running under React Native
+    - deps: ms@0.7.2
+  * deps: http-errors@~1.4.0
     - Add `HttpError` export, for `err instanceof createError.HttpError`
     - Use `setprototypeof` module to replace `__proto__` setting
     - deps: inherits@2.0.3
