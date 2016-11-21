@@ -9,13 +9,12 @@
   * deps: debug@2.3.3
     - Fix error when running under React Native
     - deps: ms@0.7.2
-  * deps: http-errors@~1.4.0
+  * deps: http-errors@~1.5.1
     - Add `HttpError` export, for `err instanceof createError.HttpError`
     - Use `setprototypeof` module to replace `__proto__` setting
     - deps: inherits@2.0.3
     - deps: statuses@'>= 1.3.1 < 2'
     - perf: enable strict mode
-  * deps: ms@0.7.2
   * deps: on-headers@~1.0.1
     - perf: enable strict mode
 
