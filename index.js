@@ -12,10 +12,10 @@
  * @private
  */
 
-var createError = require('http-errors')
-var ms = require('ms')
-var onFinished = require('on-finished')
-var onHeaders = require('on-headers')
+var createError = require('http-errors');
+var ms = require('ms');
+var onFinished = require('on-finished');
+var onHeaders = require('on-headers');
 
 /**
  * Module exports.
