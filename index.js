@@ -19,13 +19,14 @@ var onHeaders = require('on-headers')
 
 /**
  * Module exports.
- * @public
  */
 
 module.exports = timeout
 
 /**
- * Create a new timeout middleware.
+ * Timeout:
+ *
+ * See README.md for documentation.
  *
  * @param {number|string} [time=5000] The timeout as a number of milliseconds or a string for `ms`
  * @param {object} [options] Additional options for middleware
@@ -34,7 +35,7 @@ module.exports = timeout
  * @public
  */
 
-module.exports = function timeout (time, options) {
+function timeout (time, options) {
   var opts = options || {}
 
   var delay = typeof time === 'string'
