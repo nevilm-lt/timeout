@@ -6,7 +6,7 @@
 [![Test Coverage][coveralls-image]][coveralls-url]
 [![Gratipay][gratipay-image]][gratipay-url] 
    
-Times out a request in the Connect/Express application framework.
+Times out a request in the Connect/Express application framework. 
 
 ## Install
    
