@@ -7,7 +7,7 @@
 [![Gratipay][gratipay-image]][gratipay-url] 
         
 Times out a request in the Connect/Express application framework. 
-
+  
 ## Install
    
 This is a [Node.js](https://nodejs.org/en/) module available through the
