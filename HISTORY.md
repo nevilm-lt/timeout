@@ -1,10 +1,22 @@
-unreleased
-==========
+1.9.0 / 2017-05-16
+==================
 
-  * deps: http-errors@~1.4.0
+  * deps: http-errors@~1.6.1
+    - Make `message` property enumerable for `HttpError`s
+    - deps: setprototypeof@1.0.3
+  * deps: ms@2.0.0
+
+1.8.0 / 2016-11-21
+==================
+
+  * Remove un-used debug dependency
+  * deps: http-errors@~1.5.1
     - Add `HttpError` export, for `err instanceof createError.HttpError`
-    - deps: inherits@2.0.1
-    - deps: statuses@'>= 1.2.1 < 2'
+    - Use `setprototypeof` module to replace `__proto__` setting
+    - deps: inherits@2.0.3
+    - deps: statuses@'>= 1.3.1 < 2'
+    - perf: enable strict mode
+  * deps: ms@0.7.2
   * deps: on-headers@~1.0.1
     - perf: enable strict mode
 
